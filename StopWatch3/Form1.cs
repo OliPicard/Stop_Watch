@@ -35,6 +35,19 @@ namespace StopWatch3
             timer1.Enabled = false;
             StartTime = new TimeSpan(0, 0, 0);
             label1.Text = StartTime.ToString();
+            label2.Text = ("Lap 1");
+            label3.Text = ("Lap 2");
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            label2.Text = StartTime.ToString();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            label3.Text = StartTime.ToString();
+        }
+
     }
 }
