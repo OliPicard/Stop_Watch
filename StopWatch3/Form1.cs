@@ -16,6 +16,8 @@ namespace StopWatch3
     {
         TimeSpan StartTime = new TimeSpan(0, 0, 0);
         TimeSpan addTime = new TimeSpan(0, 0, 1);
+        int apple;
+        int pear;
         public Form1()
         {
             InitializeComponent();
@@ -51,6 +53,9 @@ namespace StopWatch3
         private void label3_Click(object sender, EventArgs e)
         {
             label3.Text = StartTime.ToString();
+            string what = StartTime.ToString();
+            what = what.Replace(":","");
+            apple = Convert.ToInt16(what);
         }
 
         private void label4_Click(object sender, EventArgs e)
